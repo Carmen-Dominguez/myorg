@@ -1,3 +1,10 @@
+<h1>Todos</h1>
+
+<ul>
+  <li *ngFor="let t of todos" class="todo">{{ t.title }}</li>
+</ul>
+<button id="add-todo" (click)="AddTodo()">Add Random todo</button>
+
 <header class="flex">
   <svg width="40" height="40" viewBox="0 0 262 163">
     <polygon
@@ -31,7 +38,6 @@
       fill="#022f56"
     ></path>
   </svg>
-  <h1>Welcome to {{ title }}!</h1>
 </header>
 <main>
   <h2>Resources &amp; Tools</h2>
